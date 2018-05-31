@@ -12,3 +12,5 @@ var isPalindrome = function(x) {
   }
   return base === n
 };
+
+module.exports = isPalindrome
