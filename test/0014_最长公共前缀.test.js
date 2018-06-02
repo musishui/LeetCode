@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 var longestCommonPrefix = require('../src/0014_最长公共前缀')
-describe('测试最长公共前缀', () => {
+describe('0014_最长公共前缀', () => {
   it('有公共前缀', () => {
     expect(longestCommonPrefix(["flower", "flow", "flight"])).to.be.equal('fl')
   })

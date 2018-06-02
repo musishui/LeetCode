@@ -2,7 +2,7 @@
 
 const expect = require('chai').expect
 var lengthOfLongestSubstring = require('../src/0003_无重复字符的最长子串')
-describe('无重复字符的最长子串', () => {
+describe('0003_无重复字符的最长子串', () => {
   it('abcabcbb', () => {
     expect(lengthOfLongestSubstring('abcabcbb')).to.be.equal(3)
   })

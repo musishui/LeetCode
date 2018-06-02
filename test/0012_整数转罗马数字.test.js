@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 var intToRoman = require('../src/0012_整数转罗马数字')
-describe('整数转罗马数字', () => {
+describe('0012_整数转罗马数字', () => {
   it('3', () => {
     expect(intToRoman(3)).to.be.equal('III')
   })
