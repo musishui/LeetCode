@@ -9,9 +9,8 @@ var fourSum = function (nums, target) {
   let len = nums.length
   for (let i = 0; i < len - 3; i++) {
     if (i > 0 && nums[i] === nums[i - 1]) continue
-    let ii = i + 1
-    for (let j = ii; j < len - 2; j++) {
-      if (j > ii && nums[j] === nums[j - 1]) continue
+    for (let j = i + 1; j < len - 2; j++) {
+      if (j > i + 1 && nums[j] === nums[j - 1]) continue
       let sum1 = nums[i] + nums[j]
       let left = j + 1
       let right = len - 1
