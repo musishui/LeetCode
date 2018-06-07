@@ -13,7 +13,7 @@ var swapPairs = function (head) {
   if(!head || !head.next) return head
   let newHead = {next:head}
   let currNode = newHead
-  while (currNode && currNode.next && currNode.next.next) {
+  while (currNode.next && currNode.next.next) {
     let prev = currNode.next
     let next = prev.next
 
