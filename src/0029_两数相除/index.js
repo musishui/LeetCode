@@ -28,11 +28,14 @@ var divide = function (dividend, divisor) {
       dividend -= item.val
     }
     if (dividend >= item.val) {
-      nums.push({
-        val: item.val + item.val,
-        cnt: item.cnt + item.cnt
-      })
-      i++
+      let val = item.val + item.val
+      if (dividend >= val) {
+        nums.push({
+          val: val,
+          cnt: item.cnt + item.cnt
+        })
+        i++
+      }
     } else if (dividend < divisor) {
       break;
     } else {
