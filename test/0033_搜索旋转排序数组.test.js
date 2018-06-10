@@ -19,4 +19,10 @@ describe('0033_搜索旋转排序数组', () => {
     const output = 2
     expect(fun(input, target)).to.be.equal(output)
   })
+  it('用例四', () => {
+    const input = [3,5,1]
+    const target = 3
+    const output = 0
+    expect(fun(input, target)).to.be.equal(output)
+  })
 })

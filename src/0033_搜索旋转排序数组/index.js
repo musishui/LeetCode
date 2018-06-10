@@ -3,9 +3,9 @@
  * @param {number} target
  * @return {number}
  */
-var search = function (nums, target) {
-  return splitArray(nums, target, 0, nums.length-1)
-};
+// var search = function (nums, target) {
+//   return splitArray(nums, target, 0, nums.length-1)
+// };
 
 function splitArray(nums, target, left, right) {
   if (left > right) return -1
@@ -44,4 +44,45 @@ function indexOf(nums, target, left, right) {
   return -1
 }
 
+var search = function (nums, target) {
+  // return splitArray(nums, target, 0, nums.length-1)
+  let left = 0
+  let right = nums.length - 1
+  let mid = 0
+  let l, r
+  while (left <= right) {
+    mid = Math.ceil((left + right) / 2)
+    if (nums[mid] === target) return mid
+    if (nums[left] > nums[mid]) {
+      if (target >= nums[mid] && target <= nums[right]) {
+        l = mid
+        r = right
+        break
+      }
+      right = mid - 1
+    } else {
+      if (target >= nums[left] && target <= nums[mid]) {
+        l = left
+        r = mid
+        break
+      }
+      left = mid + 1
+    }
+  }
+  if (l == null) return -1
+  while (l <= r) {
+    let m = Math.ceil((l + r) / 2)
+    if (nums[m] === target) return m
+    else if (nums[m] > target) {
+      r = m - 1
+    } else {
+      l = m + 1
+    }
+  }
+  return -1
+};
+const input = [3, 5, 1]
+const target = 3
+const output = 0
+console.log(search(input, target))
 module.exports = search
