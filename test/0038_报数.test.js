@@ -1,6 +1,6 @@
 const expect = require('chai').expect
 var fun = require('../src/0038_报数')
-describe('../src/0038_报数', () => {
+describe('0038_报数', () => {
   it('用例一', () => {
     const input = 6
     const output = '312211'
