@@ -10,7 +10,7 @@ describe('0046_全排列', () => {
   })
   it('用例二', () => {
     const input = [1, 2, 3]
-    const output = [[3,2,1],[2,3,1],[2,1,3],[3,1,2],[1,3,2],[1,2,3]]
+    const output = [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
     expect(fun(input)).to.deep.equal(output)
   })
 })
