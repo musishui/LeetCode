@@ -14,5 +14,5 @@ var uniquePaths = function (m, n) {
   }
   return result / num
 };
-uniquePaths(1, 10)
+
 module.exports = uniquePaths
