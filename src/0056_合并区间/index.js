@@ -35,8 +35,4 @@ function Interval(start, end) {
   this.end = end;
 }
 
-function convertToIntervals (arrs) {
- return arrs.map(item=>new Interval(item[0], item[1])) 
-}
-
-module.exports = { merge, convertToIntervals}
+module.exports =  merge
