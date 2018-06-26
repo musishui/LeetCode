@@ -13,15 +13,16 @@ class Interval {
   }
 }
 
-
 function buildListNode(arr) {
-  let header = new ListNode(arr[0])
+  let header = {
+    next: null
+  }
   let node = header
-  for (let i = 1; i < arr.length; i++) {
+  for (let i = 0; i < arr.length; i++) {
     node.next = new ListNode(arr[i])
     node = node.next
   }
-  return header
+  return header.next
 }
 
 function buildIntervals(arrs) {
