@@ -41,7 +41,4 @@ var inorderTraversal = function (root) {
   return nums
 };
 
-let tree = TreeNode.creat([1,2])
-let nums = inorderTraversal(tree)
-console.log(JSON.stringify(nums))
 module.exports = inorderTraversal
