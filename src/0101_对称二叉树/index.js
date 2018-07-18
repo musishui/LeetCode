@@ -9,7 +9,6 @@
  * @param {TreeNode} root
  * @return {boolean}
  */
-const TreeNode = require('../../helper').TreeNode
 var isSymmetric = function (root) {
   if (root == null) return true
   let nodes = [root]
