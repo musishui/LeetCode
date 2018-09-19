@@ -13,17 +13,17 @@ class Interval {
   }
 }
 
-class TreeNode{
+class TreeNode {
   constructor(val) {
     this.val = val
     this.left = this.right = null
   }
 
-  static creat (arr) {
-    if(!arr.length)return null
+  static creat(arr) {
+    if (!arr.length) return null
     let nodes = [new TreeNode(arr[0])]
-    let n=0
-    for (let i = 1; i < arr.length; i++){
+    let n = 0
+    for (let i = 1; i < arr.length; i++) {
       if (arr[i] != null) {
         nodes[n].left = new TreeNode(arr[i])
         nodes.push(nodes[n].left)
@@ -59,11 +59,17 @@ function buildInterval(arr) {
   return new Interval(arr[0], arr[1])
 }
 
+function UndirectedGraphNode(label) {
+  this.label = label;
+  this.neighbors = []; // Array of UndirectedGraphNode
+}
+
 module.exports = {
   ListNode,
   buildListNode,
   Interval,
   buildInterval,
   buildIntervals,
-  TreeNode
+  TreeNode,
+  UndirectedGraphNode
 }
