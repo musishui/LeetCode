@@ -14,9 +14,10 @@ class Interval {
 }
 
 class TreeNode {
-  constructor(val) {
+  constructor(val, left, right) {
     this.val = val
-    this.left = this.right = null
+    this.left = left || null
+    this.right = right || null
   }
 
   static creat(arr) {
