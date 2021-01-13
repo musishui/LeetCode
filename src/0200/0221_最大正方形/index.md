@@ -6,12 +6,14 @@
 
 **示例 1：**
 
+![](https://assets.leetcode.com/uploads/2020/11/26/max1grid.jpg)
 
     输入：matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
     输出：4
 
 **示例 2：**
 
+![](https://assets.leetcode.com/uploads/2020/11/26/max2grid.jpg)
 
     输入：matrix = [["0","1"],["1","0"]]
     输出：1
